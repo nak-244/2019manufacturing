@@ -56,7 +56,6 @@
 ![](https://user-images.githubusercontent.com/45871453/61276930-ff117c80-a7eb-11e9-9418-86991da34451.png)
 https://jobhouse.jp/factory
 
-
 ![](https://user-images.githubusercontent.com/45871453/61277115-6af3e500-a7ec-11e9-9900-bb09b76cf936.png)
 https://www.cognavi.jp/
 
