@@ -130,10 +130,6 @@ body > * {
 .section-dark {
 	position: relative;
 	color: map-get($theme-colors, 'light');
-	background-size: 100%;
-	background-position: bottom;
-	background-image: url(assets/img/silhouette.png);
-	background-repeat: no-repeat;
 	&:before {
 		position: absolute;
 		top: 0px;
