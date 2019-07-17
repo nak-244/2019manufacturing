@@ -6447,8 +6447,10 @@ body > * {
 .section-dark {
   position: relative;
   color: #f3f3f3;
-  background-size: cover;
-  background-position: center; }
+  background-size: 100%;
+  background-position: bottom;
+  background-image: url(assets/img/silhouette.png);
+  background-repeat: no-repeat; }
   .section-dark:before {
     position: absolute;
     top: 0px;
