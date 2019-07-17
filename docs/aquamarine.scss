@@ -23,11 +23,11 @@ $enable-print-styles:       true;
 // Colors
 
 $theme-colors: (
-  primary: #12bbad,
-  secondary: #4f70ce,
+  primary: #1EB858,
+  secondary: #8ABEFF,
   light: #f3f3f3,
   dark: #151515,
-  info: #ccc,
+  info: #7F72E8,
   success: #28a745,
   warning: #ffc107,
   danger: #dc3545
@@ -36,7 +36,7 @@ $theme-colors: (
 $body-bg: white;
 $body-color: #333;
 $body-color-inverse: invert($body-color) !default;
-$link-color: #12bbad;
+$link-color: #1EB858;
 
 // Fonts
 $font-family-base: Roboto;
