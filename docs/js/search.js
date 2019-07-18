@@ -1,4 +1,3 @@
-  <script type="text/javascript">
     $(function() {
       var href = "https://sigotora.jp/index.cfm";
       $('#srh_ken_param,#sfw').on('change', function() {
@@ -7,4 +6,3 @@
         $('#test').prop('href', href + "?fuseaction=job.joblist&srh_jobtype_param=10&srh_ken_param=" + srh_ken_param + "&sfw=" + sfw);
       });
     });
-  </script>
