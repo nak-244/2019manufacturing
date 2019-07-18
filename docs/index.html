@@ -15,6 +15,7 @@
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   <script src="js/smooth-scroll.js"></script>
+  <script src="js/search.js"></script>
 </head>
 
 <body>
@@ -51,71 +52,112 @@
       </div>
     </div>
   </div>
-  <div class="py-5 bg-light">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <h3 class="">製造業の仕事検索</h3>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-5 col-sm-12"></div>
-        <div class="col-md-5 col-sm-12"></div>
-        <div class="col-md-2 col-sm-12"></div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5 bg-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12" style="">
-          <h3>製造業で働くメリット</h3>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-4 p-4 animate-in-down"> <i class="d-block fa fa-3x mb-2 text-center fa-calendar text-primary animate-in-down"></i>
-          <h5>計画が立てやすい</h5>
-          <p>製造業はライン作業や行程が決まっていることが多いため、シフト制で動いていることがほとんどです。また、土日祝日が休日の企業も多いため、仕事とプライベートの予定が立てやすいということが魅力の1つです。</p>
-        </div>
-        <div class="col-md-4 col-6 p-4"> <i class="d-block fa fa-3x mb-2 text-center fa-jpy text-primary animate-in-down"></i>
-          <h5>安定した収入</h5>
-          <p>勤務時間が決まっていることが多く、お給料の計算をしやすいこともメリットです。企業によっては、実力と頑張り次第で昇給につながることもありますので、お給料アップも見込めます。</p>
-        </div>
-        <div class="col-md-4 col-6 p-4"> <i class="d-block fa fa-3x mb-2 text-center fa-smile-o text-primary animate-in-down"></i>
-          <h5>未経験でもOK</h5>
-          <p>製造業は基本的に業務工程が決まっているため、未経験でもしっかり指導を受けて着実に業務を覚えることができます。未経験で就業するスタッフ様も多いので、安心してご応募ください。</p>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="py-5 bg-white">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12" style="">
-          <h3>製造業で働くメリット</h3>
-        </div>
-      </div>
-      <div class="row justify-content-center">
-        <div class="col-md-4 p-4 animate-in-down"> <i class="d-block fa fa-3x mb-2 text-center fa-calendar text-primary animate-in-down"></i>
-          <h5>計画が立てやすい</h5>
-          <p>製造業はライン作業や行程が決まっていることが多いため、シフト制で動いていることがほとんどです。また、土日祝日が休日の企業も多いため、仕事とプライベートの予定が立てやすいということが魅力の1つです。</p>
-        </div>
-        <div class="col-md-4 col-6 p-4"> <i class="d-block fa fa-3x mb-2 text-center fa-jpy text-primary animate-in-down"></i>
-          <h5>安定した収入</h5>
-          <p>勤務時間が決まっていることが多く、お給料の計算をしやすいこともメリットです。企業によっては、実力と頑張り次第で昇給につながることもありますので、お給料アップも見込めます。</p>
-        </div>
-        <div class="col-md-4 col-6 p-4"> <i class="d-block fa fa-3x mb-2 text-center fa-smile-o text-primary animate-in-down"></i>
-          <h5>未経験でもOK</h5>
-          <p>製造業は基本的に業務工程が決まっているため、未経験でもしっかり指導を受けて着実に業務を覚えることができます。未経験で就業するスタッフ様も多いので、安心してご応募ください。</p>
-        </div>
-      </div>
-    </div>
-  </div>
   <div class="bg-primary py-3 sp text-center">
     <div class="container-fluid">
       <div class="row">
         <div class="col-6"><img class="my-0" src="assets/img/client1.png"></div>
         <div class="col-6"><img class="my-0" src="assets/img/client2.png"></div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h3 class="mb-5">製造業の仕事検索</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 col-sm-12">
+          <div class="form-group">
+            <label>勤務地（都道府県）</label>
+            <select id="srh_ken_param" class="custom-select">
+              <option value="">---</option>
+              <option value="1">北海道</option>
+              <option value="2">青森県</option>
+              <option value="3">岩手県</option>
+              <option value="4">宮城県</option>
+              <option value="5">秋田県</option>
+              <option value="6">山形県</option>
+              <option value="7">福島県</option>
+              <option value="8">茨城県</option>
+              <option value="9">栃木県</option>
+              <option value="10">群馬県</option>
+              <option value="11">埼玉県</option>
+              <option value="12">千葉県</option>
+              <option value="13">東京都</option>
+              <option value="14">神奈川県</option>
+              <option value="15">新潟県</option>
+              <option value="16">富山県</option>
+              <option value="17">石川県</option>
+              <option value="18">福井県</option>
+              <option value="19">山梨県</option>
+              <option value="20">長野県</option>
+              <option value="21">岐阜県</option>
+              <option value="22">静岡県</option>
+              <option value="23">愛知県</option>
+              <option value="24">三重県</option>
+              <option value="25">滋賀県</option>
+              <option value="26">京都府</option>
+              <option value="27">大阪府</option>
+              <option value="28">兵庫県</option>
+              <option value="29">奈良県</option>
+              <option value="30">和歌山県</option>
+              <option value="31">鳥取県</option>
+              <option value="32">島根県</option>
+              <option value="33">岡山県</option>
+              <option value="34">広島県</option>
+              <option value="35">山口県</option>
+              <option value="36">徳島県</option>
+              <option value="37">香川県</option>
+              <option value="38">愛媛県</option>
+              <option value="39">高知県</option>
+              <option value="40">福岡県</option>
+              <option value="41">佐賀県</option>
+              <option value="42">長崎県</option>
+              <option value="43">熊本県</option>
+              <option value="44">大分県</option>
+              <option value="45">宮崎県</option>
+              <option value="46">鹿児島県</option>
+              <option value="47">沖縄県</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-12">
+          <div class="form-group">
+            <label>キーワード</label>
+            <input type="text" id="sfw" class="form-control">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-12">
+          <div class="form-group">
+            <label>検索</label>
+            <a class="btn btn-primary btn-block" href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_jobtype_param=10&amp;sfw=" target="_blank" id="test">求人検索</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 bg-white">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12" style="">
+          <h3>製造業で働くメリット</h3>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-4 p-4"> <i class="d-block fa fa-3x mb-2 text-center fa-calendar text-primary"></i>
+          <h5>計画が立てやすい</h5>
+          <p>製造業はライン作業や行程が決まっていることが多いため、シフト制で動いていることがほとんどです。また、土日祝日が休日の企業も多いため、仕事とプライベートの予定が立てやすいということが魅力の1つです。</p>
+        </div>
+        <div class="col-md-4 p-4"> <i class="d-block fa fa-3x mb-2 text-center fa-jpy text-primary"></i>
+          <h5>安定した収入</h5>
+          <p>勤務時間が決まっていることが多く、お給料の計算をしやすいこともメリットです。企業によっては、実力と頑張り次第で昇給につながることもありますので、お給料アップも見込めます。</p>
+        </div>
+        <div class="col-md-4 p-4"> <i class="d-block fa fa-3x mb-2 text-center fa-smile-o text-primary"></i>
+          <h5>未経験でもOK</h5>
+          <p>製造業は基本的に業務工程が決まっているため、未経験でもしっかり指導を受けて着実に業務を覚えることができます。未経験で就業するスタッフ様も多いので、安心してご応募ください。</p>
+        </div>
       </div>
     </div>
   </div>
