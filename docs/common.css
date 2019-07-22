@@ -165,7 +165,7 @@ body:before{
 
 /* 画像が徐々に表示される */
 .img-wrap {
-  animation: img-wrap 2s cubic-bezier(.4, 0, .2, 1);
+  animation: img-wrap 10s cubic-bezier(.4, 0, .2, 1);
 }
 
 @keyframes img-wrap {
