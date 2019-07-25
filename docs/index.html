@@ -174,13 +174,17 @@
       <div class="row alpha" style="	text-shadow: 0px 0px 4px white;">
         <div class="col-md-6">
           <a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_jobtype_param=10&amp;srh_jobtype_child_param=77&amp;sfw=" target="_blank">
+            <p class="ceo ceo-second">
             <img class="img-fluid d-block mx-auto rounded" src="assets/img/ninki1.png">
+          </p>
             <p class="text-center"><i class="fa fa-fw text-danger fa-caret-right"></i><u>食品製造の仕事を探す</u></p>
           </a>
         </div>
         <div class="col-md-6">
           <a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_jobtype_param=10&amp;srh_jobtype_child_param=76,78,79,80,81" target="_blank">
+            <p class="ceo ceo-second">
             <img class="img-fluid d-block mx-auto rounded" src="assets/img/ninki2.png">
+          </p>
             <p class="text-center"><i class="fa fa-fw text-danger fa-caret-right"></i><u>組立・加工・検査の仕事を探す</u></p>
           </a>
         </div>
@@ -325,13 +329,17 @@
       <div class="row alpha" style="	text-shadow: 0px 0px 4px white;">
         <div class="col-md-6">
           <a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_jobtype_param=10&amp;srh_jobtype_child_param=77&amp;sfw=" target="_blank">
+            <p class="ceo ceo-second">
             <img class="img-fluid d-block mx-auto rounded" src="assets/img/ninki1.png">
+          </p>
             <p class="text-center"><i class="fa fa-fw text-danger fa-caret-right"></i><u>食品製造の仕事を探す</u></p>
           </a>
         </div>
         <div class="col-md-6">
           <a href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_jobtype_param=10&amp;srh_jobtype_child_param=76,78,79,80,81" target="_blank">
+            <p class="ceo ceo-second">
             <img class="img-fluid d-block mx-auto rounded" src="assets/img/ninki2.png">
+          </p>
             <p class="text-center"><i class="fa fa-fw text-danger fa-caret-right"></i><u>組立・加工・検査の仕事を探す</u></p>
           </a>
         </div>
@@ -545,6 +553,28 @@
         }
       }]
     });
+  </script>
+  <script>
+  $( window ).scroll( function() {
+  ( () => {
+      // p タグの class を指定
+      const ceo = document.querySelectorAll( '.ceo' );
+
+      const observer = new IntersectionObserver( entries => {
+          entries.forEach( entry => {
+              if( entry.intersectionRatio > 0 ) {
+                  entry.target.classList.add( 'ceo-animation' );
+              } else {
+                  entry.target.classList.remove( 'ceo-animation' );
+              }
+          });
+      });
+
+      ceo.forEach( img => {
+          observer.observe( img );
+      });
+  })();
+  });
   </script>
 </body>
 
