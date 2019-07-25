@@ -113,19 +113,18 @@
       <div class="row m-0 p-0">
         <div class="col-12 m-0 p-0">
           <ul class="slider m-0 p-0" style="">
-            <li><a href="#"><img src="slick/img/01.png" alt="image01"></a></li>
-            <li><a href="#"><img src="slick/img/02.png" alt="image01"></a></li>
-            <li><a href="#"><img src="slick/img/03.png" alt="image01"></a></li>
-            <li><a href="#"><img src="slick/img/04.png" alt="image01"></a></li>
-            <li><a href="#"><img src="slick/img/05.png" alt="image01"></a></li>
-            <li><a href="#"><img src="slick/img/06.png" alt="image01"></a></li>
-            <li><a href="#"><img src="slick/img/07.png" alt="image01"></a></li>
-            <li><a href="#"><img src="slick/img/08.png" alt="image01"></a></li>
-            <li><a href="#"><img src="slick/img/09.png" alt="image01"></a></li>
-            <li><a href="#"><img src="slick/img/10.png" alt="image01"></a></li>
-            <li><a href="#"><img src="slick/img/11.png" alt="image01"></a></li>
-            <li><a href="#"><img src="slick/img/12.png" alt="image01"></a></li>
-            <li><a href="#"><img src="slick/img/13.png" alt="image01"></a></li>
+            <li><img src="slick/img/02.png" alt="image01"></li>
+            <li><img src="slick/img/03.png" alt="image01"></li>
+            <li><img src="slick/img/04.png" alt="image01"></li>
+            <li><img src="slick/img/05.png" alt="image01"></li>
+            <li><img src="slick/img/06.png" alt="image01"></li>
+            <li><img src="slick/img/07.png" alt="image01"></li>
+            <li><img src="slick/img/08.png" alt="image01"></li>
+            <li><img src="slick/img/09.png" alt="image01"></li>
+            <li><img src="slick/img/10.png" alt="image01"></li>
+            <li><img src="slick/img/11.png" alt="image01"></li>
+            <li><img src="slick/img/12.png" alt="image01"></li>
+            <li><img src="slick/img/13.png" alt="image01"></li>
           </ul>
         </div>
       </div>
@@ -137,8 +136,9 @@
   slidesToScroll: 1,
   arrows: false,
   autoplay: true,
-  autoplaySpeed: 3000,
-  speed: 300,
+  cssEase: 'linear',
+  autoplaySpeed: 0,
+  speed: 10000,
   responsive: [
    {
     breakpoint: 768, //767px以下のサイズに適用
@@ -469,6 +469,92 @@
               </div>
             </div>
           </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="py-5 bg-light">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h4 class="mb-5">製造業の仕事検索</h4>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-5 col-sm-12">
+          <div class="form-group">
+            <label>勤務地（都道府県）</label>
+            <select id="srh_ken_param" class="custom-select">
+              <option value="">---</option>
+              <option value="1">北海道</option>
+              <option value="2">青森県</option>
+              <option value="3">岩手県</option>
+              <option value="4">宮城県</option>
+              <option value="5">秋田県</option>
+              <option value="6">山形県</option>
+              <option value="7">福島県</option>
+              <option value="8">茨城県</option>
+              <option value="9">栃木県</option>
+              <option value="10">群馬県</option>
+              <option value="11">埼玉県</option>
+              <option value="12">千葉県</option>
+              <option value="13">東京都</option>
+              <option value="14">神奈川県</option>
+              <option value="15">新潟県</option>
+              <option value="16">富山県</option>
+              <option value="17">石川県</option>
+              <option value="18">福井県</option>
+              <option value="19">山梨県</option>
+              <option value="20">長野県</option>
+              <option value="21">岐阜県</option>
+              <option value="22">静岡県</option>
+              <option value="23">愛知県</option>
+              <option value="24">三重県</option>
+              <option value="25">滋賀県</option>
+              <option value="26">京都府</option>
+              <option value="27">大阪府</option>
+              <option value="28">兵庫県</option>
+              <option value="29">奈良県</option>
+              <option value="30">和歌山県</option>
+              <option value="31">鳥取県</option>
+              <option value="32">島根県</option>
+              <option value="33">岡山県</option>
+              <option value="34">広島県</option>
+              <option value="35">山口県</option>
+              <option value="36">徳島県</option>
+              <option value="37">香川県</option>
+              <option value="38">愛媛県</option>
+              <option value="39">高知県</option>
+              <option value="40">福岡県</option>
+              <option value="41">佐賀県</option>
+              <option value="42">長崎県</option>
+              <option value="43">熊本県</option>
+              <option value="44">大分県</option>
+              <option value="45">宮崎県</option>
+              <option value="46">鹿児島県</option>
+              <option value="47">沖縄県</option>
+            </select>
+          </div>
+        </div>
+        <div class="col-md-5 col-sm-12">
+          <div class="form-group">
+            <label>キーワード</label>
+            <input type="text" id="sfw" class="form-control">
+          </div>
+        </div>
+        <div class="col-md-2 col-sm-12">
+          <div class="form-group">
+            <label>検索</label>
+            <a class="btn btn-primary btn-block" href="https://sigotora.jp/index.cfm?fuseaction=job.joblist&amp;srh_jobtype_param=10&amp;sfw=" target="_blank" id="test">求人検索</a>
+          </div>
+        </div>
+      </div>
+      <div class="row alpha pt-5">
+        <div class="col-md-12">
+          <a href="https://sigotora.jp/index.cfm?fuseaction=contents.fcts&amp;cid=216" target="_blank">
+            <img class="img-fluid d-block pc" src="assets/img/bnr.png">
+            <img class="img-fluid d-block sp" src="assets/img/bnr_sp.png">
+          </a>
         </div>
       </div>
     </div>
