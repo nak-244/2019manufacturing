@@ -108,36 +108,47 @@
       </div>
     </div>
   </div>
-  <div class="">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-12">
-          <ul class="slider">
-              <li><a href="#"><img src="slick/img/01.png" alt="image01"></a></li>
-              <li><a href="#"><img src="slick/img/02.png" alt="image01"></a></li>
-              <li><a href="#"><img src="slick/img/03.png" alt="image01"></a></li>
-              <li><a href="#"><img src="slick/img/04.png" alt="image01"></a></li>
-              <li><a href="#"><img src="slick/img/05.png" alt="image01"></a></li>
-              <li><a href="#"><img src="slick/img/06.png" alt="image01"></a></li>
-              <li><a href="#"><img src="slick/img/07.png" alt="image01"></a></li>
-              <li><a href="#"><img src="slick/img/08.png" alt="image01"></a></li>
-              <li><a href="#"><img src="slick/img/09.png" alt="image01"></a></li>
-              <li><a href="#"><img src="slick/img/10.png" alt="image01"></a></li>
-              <li><a href="#"><img src="slick/img/11.png" alt="image01"></a></li>
-              <li><a href="#"><img src="slick/img/12.png" alt="image01"></a></li>
-              <li><a href="#"><img src="slick/img/13.png" alt="image01"></a></li>
-              <li><a href="#"><img src="slick/img/14.png" alt="image01"></a></li>
-              <li><a href="#"><img src="slick/img/15.png" alt="image01"></a></li>
+  <div class="m-0 p-0" style="">
+    <div class="container-fluid m-0 p-0">
+      <div class="row m-0 p-0">
+        <div class="col-12 m-0 p-0">
+          <ul class="slider m-0 p-0" style="">
+            <li><a href="#"><img src="slick/img/01.png" alt="image01"></a></li>
+            <li><a href="#"><img src="slick/img/02.png" alt="image01"></a></li>
+            <li><a href="#"><img src="slick/img/03.png" alt="image01"></a></li>
+            <li><a href="#"><img src="slick/img/04.png" alt="image01"></a></li>
+            <li><a href="#"><img src="slick/img/05.png" alt="image01"></a></li>
+            <li><a href="#"><img src="slick/img/06.png" alt="image01"></a></li>
+            <li><a href="#"><img src="slick/img/07.png" alt="image01"></a></li>
+            <li><a href="#"><img src="slick/img/08.png" alt="image01"></a></li>
+            <li><a href="#"><img src="slick/img/09.png" alt="image01"></a></li>
+            <li><a href="#"><img src="slick/img/10.png" alt="image01"></a></li>
+            <li><a href="#"><img src="slick/img/11.png" alt="image01"></a></li>
+            <li><a href="#"><img src="slick/img/12.png" alt="image01"></a></li>
+            <li><a href="#"><img src="slick/img/13.png" alt="image01"></a></li>
+            <li><a href="#"><img src="slick/img/14.png" alt="image01"></a></li>
+            <li><a href="#"><img src="slick/img/15.png" alt="image01"></a></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
-  <script>
-  $('.slider').slick({
+  <script> $('.slider').slick({
   infinite: true,
-  slidesToShow: 12,
-  slidesToScroll: 1
+  slidesToShow: 8,
+  slidesToScroll: 1,
+  arrows: false,
+  autoplay: true,
+  autoplaySpeed: 100,
+  speed: 6000,
+  responsive: [
+   {
+    breakpoint: 768, //767px以下のサイズに適用
+    settings: {
+      slidesToShow:2,
+    }
+   }
+ ]
 });
   </script>
   <div class="py-5 bg-white">
