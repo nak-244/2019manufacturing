@@ -143,6 +143,42 @@
   left: -1.5em;
 }
 
+/* フロー　登録までの流れ */
+.flowchart {
+  margin-left: .5em;
+  border-left: 2px dashed;
+}
+
+.flowchart h4 {
+  position: relative;
+  margin-left: 2em;
+  margin-bottom: 0;
+}
+
+.flowchart p {
+  margin-top: .3em;
+  margin-left: 3em;
+}
+
+.flowchart h4:before {
+  position: absolute;
+  left: -2.5em;
+  top: .2em;
+  width: 1em;
+  height: 1em;
+  border-radius: .5em;
+  background: #fff;
+}
+
+.flowchart h4:after {
+  content: "";
+  border-bottom: 1px solid;
+  width: 1em;
+  background: #000;
+  position: absolute;
+  top: .8em;
+  left: -1.5em;
+}
 /* ガターの溝をなくす */
 .no-gutter > [class*='col-'] {
     padding-right:0;
