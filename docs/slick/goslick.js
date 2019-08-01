@@ -1,3 +1,4 @@
+$(function(){
     $('.slider').slick({
       infinite: true,
       slidesToShow: 7,
@@ -14,3 +15,4 @@
         }
       }]
     });
+});
